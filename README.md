@@ -348,4 +348,3 @@
 
 &emsp;&emsp;以上便是我对 React 高阶组件的一些理解，如果现在再让我去写那道面试题，我可能会写：React 高阶组件其实就是装饰器模式与React相爱后的爱情结晶，它可以抽离不同组件中的公共逻辑，使得组件更加单一化，提高组件的复用性。
 
-<a href="https://github.com/NeuronGenius/UEX.Blog/tree/master/examples/React-HOC">**实验文件传送门**</a>
