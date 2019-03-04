@@ -1,4 +1,4 @@
-## 初始 React 高阶组件
+## 初识 React 高阶组件
 
 ### 1. 前言
 
@@ -73,7 +73,8 @@
 
 &emsp;&emsp;最后，打开浏览器，效果如下图:
 
-![WithHeader](./images/withHeader.png)
+![WithHeader](https://user-images.githubusercontent.com/16893053/47266830-63a9ee80-d56e-11e8-800a-811e59b61374.png)
+
 
 &emsp;&emsp;可以看到`WithHeaderPage`组件已经被`HOC`组件包裹了起来，达到了我们的预期效果。但是还有一个小问题就是，假如这个高阶组件被使用了很多次，那么在调试的时候我们会看见很多同名的`HOC`组件，不利于调试，所以我们应该给高阶组件加上名字，便于我们调试。
 
@@ -107,7 +108,8 @@
     )
 ```
 
-![WithHeader-dispalyName](./images/WithHeader-dispalyName.png)
+
+![withheader-dispalyname](https://user-images.githubusercontent.com/16893053/47266894-1b3f0080-d56f-11e8-8b29-9cec60138a02.png)
 
 &emsp;&emsp;此时可以看到，原本组件的名称正确地显示在了 HOC 组件上。
 
@@ -168,7 +170,7 @@
 
 &emsp;&emsp;最后的效果如下图：
 
-![WithHeader-props](./images/withHeader-props.png)
+![withheader-props](https://user-images.githubusercontent.com/16893053/47266923-5f320580-d56f-11e8-8194-5677e652c8b4.png)
 
 - #### 3.3 反向继承
 
@@ -259,7 +261,7 @@
 
 &emsp;&emsp;效果如下图：
 
-![WithLoading](./images/WithLoading.gif)
+![withloading](https://user-images.githubusercontent.com/16893053/47266927-707b1200-d56f-11e8-9648-19540deff278.gif)
 
 &emsp;&emsp;通过反向继承的方式，我们可以很容易的拿到原组件中的 state 和 props 等信息。然后我们通过判断 state 中 list 的长度，来决定如何渲染该组件，这样就实现了一个简单的 Loading 组件。
 
@@ -334,12 +336,16 @@
 
 &emsp;&emsp;效果如下图：
 
-![WithBind](./images/WithBind.gif)
 
-&emsp;&emsp;上面例子通过属性代理的方式，将被包裹组件所需要的信息通过属性传递的方式传给它，模拟实现了一个简单的苏剧双向绑定。
+![withbind](https://user-images.githubusercontent.com/16893053/47266937-8e487700-d56f-11e8-9d50-225013589876.gif)
+
+
+&emsp;&emsp;上面例子通过属性代理的方式，将被包裹组件所需要的信息通过属性传递的方式传给它，模拟实现了一个简单的数据双向绑定。
 
 ### 4. 总结
 
 ---
 
 &emsp;&emsp;以上便是我对 React 高阶组件的一些理解，如果现在再让我去写那道面试题，我可能会写：React 高阶组件其实就是装饰器模式与React相爱后的爱情结晶，它可以抽离不同组件中的公共逻辑，使得组件更加单一化，提高组件的复用性。
+
+<a href="https://github.com/NeuronGenius/UEX.Blog/tree/master/examples/React-HOC">**实验文件传送门**</a>
